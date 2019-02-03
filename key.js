@@ -5,6 +5,7 @@ exports.spotify = {
   secret: process.env.SPOTIFY_SECRET
 };
 
+
 // var SpotifyWebApi = require('spotify-web-api-node');
 
 // credentials are optional
