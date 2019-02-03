@@ -1,21 +1,21 @@
 # Week 10 homework assignment:
 ## LIRI Node App
 
-Navigate to the root of your project and run npm init -y — this will initialize a package.json file for your project. The package.json file is required for installing third party npm packages and saving their version numbers. If you fail to initialize a package.json file, it will be troublesome, and at times almost impossible for anyone else to run your code after cloning your project.
+[ ] Navigate to the root of your project and run npm init -y — this will initialize a package.json file for your project. The package.json file is required for installing third party npm packages and saving their version numbers. If you fail to initialize a package.json file, it will be troublesome, and at times almost impossible for anyone else to run your code after cloning your project.
 
 Image of package.json being created:
-![Image of package.json created] (/images/package_json.png)
-Format: ![Alt Text](url)
+![Image of package.json created] (/images/package_json.jpg)
 
-Make a .gitignore file and add the following lines to it. This will tell git not to track these files, and thus they won't be committed to Github.
+
+[ ] Make a .gitignore file and add the following lines to it. This will tell git not to track these files, and thus they won't be committed to Github.
 
 node_modules
 .DS_Store
 .env
 
-Make a JavaScript file named keys.js.
+[ ] Make a JavaScript file named keys.js.
 
-Inside keys.js your file will look like this:
+[ ] Inside keys.js your file will look like this:
 
 console.log('this is loaded');
 
@@ -24,9 +24,9 @@ exports.spotify = {
   secret: process.env.SPOTIFY_SECRET
 };
 
-Next, create a file named .env, add the following to it, replacing the values with your API keys (no quotes) once you have them:
+[ ] Next, create a file named .env, add the following to it, replacing the values with your API keys (no quotes) once you have them:
 
-# Spotify API keys
+ [ ] # Spotify API keys
 
 SPOTIFY_ID=your-spotify-id
 SPOTIFY_SECRET=your-spotify-secret
