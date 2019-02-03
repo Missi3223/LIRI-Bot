@@ -5,7 +5,7 @@
 
 Image of package.json being created:
 ![Image of package.json created](/images/package_json.jpg) 
-Format: ![Alt Text](url)
+
 
 
 [ ] Make a .gitignore file and add the following lines to it. This will tell git not to track these files, and thus they won't be committed to Github.
