@@ -50,19 +50,19 @@ spotify.search({
     var song = response.tracks.items[0];
     if (song != undefined){
       console.log ();
-      console.log (colors.cyan(" SONG NAME "));
-      console.log (colors.magenta(song.name));
+      console.log (colors.cyan( " SONG NAME "));
+      console.log (colors.magenta("*** " + song.name + " ***"));
 
       console.log (colors.cyan(" ARTIST or BAND "));
       for (i = 0; i < song.artists.length; i++){
-        console.log (colors.magenta (song.artists[i].name));
+        console.log (colors.magenta ("*** " +song.artists[i].name +" ***"));
       }
       console.log (colors.cyan(" ALBUM "));
-      console.log (colors.magenta(song.album.name));
+      console.log (colors.magenta("*** " +song.album.name + " ***"));
       
 
       console.log (colors.cyan(" PREVIEW LINK "));
-      console.log (colors.magenta(song.preview_url));
+      console.log (colors.magenta("*** " +song.preview_url + " ***"));
       console.log ();
       
     }
