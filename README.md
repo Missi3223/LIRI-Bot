@@ -1,70 +1,75 @@
-# Week 10 homework assignment:
+# Week 10 homework assignment
+
 ## LIRI Node App
 
-[ ] Navigate to the root of your project and run npm init -y — this will initialize a package.json file for your project. The package.json file is required for installing third party npm packages and saving their version numbers. If you fail to initialize a package.json file, it will be troublesome, and at times almost impossible for anyone else to run your code after cloning your project.
+- [ ] Navigate to the root of your project and run npm init -y — this will initialize a package.json file for your project. The package.json file is required for installing third party npm packages and saving their version numbers. If you fail to initialize a package.json file, it will be troublesome, and at times almost impossible for anyone else to run your code after cloning your project.
 
-Image of package.json being created:
+- [ ] Image of package.json being created:
 ![Image of package.json created](/images/package_json.jpg) 
 
-
-
-[ ] Make a .gitignore file and add the following lines to it. This will tell git not to track these files, and thus they won't be committed to Github.
+- [ ] Make a .gitignore file and add the following lines to it. This will tell git not to track these files, and thus they won't be committed to Github.
 
 node_modules
 .DS_Store
 .env
 
-[ ] Make a JavaScript file named keys.js.
+- [x] Make a JavaScript file named keys.js.
 
-[ ] Inside keys.js your file will look like this:
+- [x] Inside keys.js your file will look like this:
 
-console.log('this is loaded');
+- [x] console.log('this is loaded');
 
-exports.spotify = {
+- [x] exports.spotify = {
   id: process.env.SPOTIFY_ID,
   secret: process.env.SPOTIFY_SECRET
 };
 
-[ ] Next, create a file named .env, add the following to it, replacing the values with your API keys (no quotes) once you have them:
+- [x] Next, create a file named .env, add the following to it, replacing the values with your API keys (no quotes) once you have them:
 
-[ ] # Spotify API keys
+- [x] # Spotify API keys
 
 SPOTIFY_ID=your-spotify-id
 SPOTIFY_SECRET=your-spotify-secret
 
-This file will be used by the dotenv package to set what are known as environment variables to the global process.env object in node. These are values that are meant to be specific to the computer that node is running on, and since we are gitignoring this file, they won't be pushed to github — keeping our API key information private.
-If someone wanted to clone your app from github and run it themselves, they would need to supply their own .env file for it to work.
+- This file will be used by the dotenv package to set what are known as environment variables to the global process.env object in node. These are values that are meant to be specific to the computer that node is running on, and since we are gitignoring this file, they won't be pushed to github — keeping our API key information private.
 
-Make a file called random.txt.
+- If someone wanted to clone your app from github and run it themselves, they would need to supply their own .env file for it to work.
 
-Inside of random.txt put the following in with no extra characters or white space:
+- [x] Make a file called random.txt.
 
-spotify-this-song,"I Want it That Way"
+- [x] Inside of random.txt put the following in with no extra characters or white space:
 
-Make a JavaScript file named liri.js.
-At the top of the liri.js file, add code to read and set any environment variables with the dotenv package:
+- spotify-this-song,"I Want it That Way"
 
-require("dotenv").config();
+- [x] Make a JavaScript file named liri.js.
 
-Add the code required to import the keys.js file and store it in a variable.
+- At the top of the liri.js file, add code to read and set any environment variables with the dotenv package:
 
-You should then be able to access your keys information like so
+- [x] require("dotenv").config();
+
+- [x] Add the code required to import the keys.js file and store it in a variable.
+
+- [x] You should then be able to access your keys information like so
   var spotify = new Spotify(keys.spotify);
 
-Make it so liri.js can take in one of the following commands:
+- [x] Make it so liri.js can take in one of the following commands:
 
-concert-this
-spotify-this-song
-movie-this
-do-what-it-says
+- concert-this
+- spotify-this-song
+- movie-this
+- do-what-it-says
 
-What Each Command Should Do
+### What Each Command Should Do 
 
-node liri.js concert-this <artist/band name here>
+- [x] node liri.js concert-this artist/band name here
 
-This will search the Bands in Town Artist Events API ("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp") for an artist and render the following information about each event to the terminal:
+- This will search the Bands in Town Artist Events API
 
-Name of the venue
+- ("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp")
+
+### For an artist and render the following information about each event to the terminal:
+
+-[ ] Name of the venue
 Venue location
 Date of the Event (use moment to format this as "MM/DD/YYYY")
 
