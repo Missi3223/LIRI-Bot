@@ -59,20 +59,35 @@ spotify.search({
       }
       console.log (colors.cyan(" ALBUM "));
       console.log (colors.magenta("*** " +song.album.name + " ***"));
+
       
 
       console.log (colors.cyan(" PREVIEW LINK "));
       console.log (colors.magenta("*** " +song.preview_url + " ***"));
       console.log ();
       
-    }
       
-  })
-  
-  .catch (function(error){
-     console.log (error);
-  })
-  };
+      
+      fs.appendFile("log.txt",
+        "\nSong Name: " +song.name +
+        "\nArtist: " + song.artists.name +
+        "\nAlbum: " + song.album.name +
+        "\nPreview Link: " + song.preview_url, function (err){
+          if (err){
+            console.log(err);
+          }
+        } );
+
+      }else {
+          console.log("\nNo songs found for ".underline.cyan);
+          logToFile("\nNo shows found for " .underline.cyan);
+          };
+        })    
+            
+            .catch (function(error){
+               console.log (error);
+            })
+            };       
   
   function concertThis(media){
     //if no media given
@@ -97,6 +112,8 @@ spotify.search({
         console.log(colors.magenta(" Date: " + moment(element.datetime).format("MM/DD/YYYY")));
         console.log();
         })
+
+        
       }else {
         console.log(colors.red(" You didn't need to go anyway."));
       }

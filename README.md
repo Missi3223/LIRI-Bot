@@ -4,11 +4,11 @@
 
 - [x] Navigate to the root of your project and run npm init -y — this will initialize a package.json file for your project. The package.json file is required for installing third party npm packages and saving their version numbers. If you fail to initialize a package.json file, it will be troublesome, and at times almost impossible for anyone else to run your code after cloning your project.
 
-![Image of axios created](/images/axios.jpg)
+![Image of axios-install2 created](/images/axios.jpg)
 
 ![Image of npm-installs created](/images/npm_installs.jpg)
 
-- [x] Image of package.json being created:
+- [x] Image of package.json:
 
 ![Image of package.json created](/images/package_json.jpg)
 
@@ -24,7 +24,7 @@ node_modules
 
 - [x] console.log('this is loaded');
 
-![Image of keys-loaded created](/images/this_is_loaded.png)
+![Image of this-is-loaded created](/images/this_is_loaded.png)
 
 - [x] exports.spotify = {
   id: process.env.SPOTIFY_ID,
@@ -81,7 +81,7 @@ SPOTIFY_SECRET=your-spotify-secret
 - Venue location
 - Date of the Event (use moment to format this as "MM/DD/YYYY")
 
-![Image of concert-this created](/images/concert-this1.png)
+![Image of concert-this1 created](/images/concert-this1.png)
 
 ![Image of concert-this-default created](/images/concert-this-default.png)
 
@@ -119,7 +119,7 @@ to register a new application to be used with the Spotify API.
 - [x] node liri.js movie-this **movie name here**
 
 This will output the following information to your terminal/bash window:
-![Image of movie-this created](/images/movie-this.png)
+![Image of Movie-this created](/images/Movie-this.png)
 
 
 - Title of the movie.
