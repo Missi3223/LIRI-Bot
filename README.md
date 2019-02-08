@@ -151,8 +151,8 @@ Edit the text in random.txt to test out the feature for movie-this and concert-t
 
 ### BONUS
 
-- [ ] In addition to logging the data to your terminal/bash window, output the data to a .txt file called log.txt.
+- [x] In addition to logging the data to your terminal/bash window, output the data to a .txt file called log.txt.
 
-- [ ] Make sure you append each command you run to the log.txt file.
+- [x] Make sure you append each command you run to the log.txt file.
 
-- [ ] Do not overwrite your file each time you run a command.
+- [x] Do not overwrite your file each time you run a command.
