@@ -4,9 +4,9 @@
 
 - [x] Navigate to the root of your project and run npm init -y — this will initialize a package.json file for your project. The package.json file is required for installing third party npm packages and saving their version numbers. If you fail to initialize a package.json file, it will be troublesome, and at times almost impossible for anyone else to run your code after cloning your project.
 
-![Image of package.json created](/images/axios.jpg)
+![Image of axios created](/images/axios.jpg)
 
-![Image of package.json created](/images/npm_installs.jpg)
+![Image of npm-installs created](/images/npm_installs.jpg)
 
 - [x] Image of package.json being created:
 
@@ -24,7 +24,7 @@ node_modules
 
 - [x] console.log('this is loaded');
 
-![Image of package.json created](/images/this_is_loaded.png)
+![Image of keys-loaded created](/images/this_is_loaded.png)
 
 - [x] exports.spotify = {
   id: process.env.SPOTIFY_ID,
@@ -81,13 +81,13 @@ SPOTIFY_SECRET=your-spotify-secret
 - Venue location
 - Date of the Event (use moment to format this as "MM/DD/YYYY")
 
-![Image of package.json created](/images/concert-this1.png)
+![Image of concert-this created](/images/concert-this1.png)
 
-![Image of package.json created](/images/concert-this-default.png)
+![Image of concert-this-default created](/images/concert-this-default.png)
 
 - node liri.js spotify-this-song **song name here**
 
-![Image of package.json created](/images/spoyify-this.png)
+![Image of spotify-this created](/images/spoyify-this.png)
 
 - This will show the following information about the song in your terminal/bash window
 
@@ -119,7 +119,7 @@ to register a new application to be used with the Spotify API.
 - [x] node liri.js movie-this **movie name here**
 
 This will output the following information to your terminal/bash window:
-![Image of package.json created](/images/movie-this.png)
+![Image of movie-this created](/images/movie-this.png)
 
 
 - Title of the movie.
@@ -137,7 +137,7 @@ This will output the following information to your terminal/bash window:
 
 - [x] It's on Netflix!
 
-![Image of package.json created](/images/movie-this-default.png)
+![Image of movie-this-default created](/images/movie-this-default.png)
 
 _You'll use the axios package to retrieve data from the OMDB API. Like all of the in-class activities, the OMDB API requires an API key. You may use **trilogy**._
 
