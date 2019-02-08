@@ -87,7 +87,7 @@ SPOTIFY_SECRET=your-spotify-secret
 
 - node liri.js spotify-this-song **song name here**
 
-![Image of spotify-this created](/images/spoyify-this.png)
+![Image of spotify-this created](/images/spotify-this.png)
 
 - This will show the following information about the song in your terminal/bash window
 
@@ -121,7 +121,6 @@ to register a new application to be used with the Spotify API.
 This will output the following information to your terminal/bash window:
 ![Image of Movie-this created](/images/Movie-this.png)
 
-
 - Title of the movie.
 - Year the movie came out.
 - IMDB Rating of the movie.
@@ -135,7 +134,8 @@ This will output the following information to your terminal/bash window:
 
 - [x] If you haven't watched "Mr. Nobody," then you should: (http://www.imdb.com/title/tt0485947)
 
-- [x] It's on Netflix!
+- [x] It's on Netflix
+
 
 ![Image of movie-this-default created](/images/movie-this-default.png)
 

@@ -108,19 +108,28 @@ spotify.search({
           console.log(colors.magenta(" City: " + element.venue.city + "," + element.venue.region));
         }
           else{
-            console.log(colors.magenta(" City: " + element.venue.city + "," + element.venue.country));
+            console.log(colors.magenta(" City: " + element.venue.city + "," + element.venue.region));
           }
         console.log(colors.magenta(" Date: " + moment(element.datetime).format("MM/DD/YYYY")));
         console.log();
-        })
+       
 
+        fs.appendFile("log.txt",
+        "\nUpcoming Events: " +media  +
+        "\nVenue: " + element.venue.name +
+        "\nLocation: " + element.venue.city + "," + element.venue.region +
         
-      }else {
-        console.log(colors.red(" You didn't need to go anyway."));
-      }
+        "\nDate: " + moment(element.datetime).format("MM/DD/YYYY") +
+        "\n------------------------\n", function (error){
+          if (error){
+            console.log(error);
+          }
+        } );
+      })
     }
+  }
     catch(error){
-      console.log(colors.red("No concerts for you!"));
+      console.log(error);
     }
   })
   }
