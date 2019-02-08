@@ -72,7 +72,8 @@ spotify.search({
         "\nSong Name: " +song.name +
         "\nArtist: " + song.artists.name +
         "\nAlbum: " + song.album.name +
-        "\nPreview Link: " + song.preview_url, function (err){
+        "\nPreview Link: " + song.preview_url +
+        "\n------------------------\n", function (err){
           if (err){
             console.log(err);
           }
@@ -160,8 +161,22 @@ spotify.search({
         console.log (colors.cyan(" ACTORS "));
         console.log (colors.magenta(response.Actors));
         console.log ();
-     }
-    
+      
+        fs.appendFile("log.txt",
+        "\nMovie: " +response.Title +
+        "\nYear: " + response.Year +
+        "\nRating: " + response.Ratings[0].Source +
+        "\nRating: " + response.Ratings[1].Source +
+        "\nCountry: " + response.Country +
+        "\nLanguage: " + response.Language +
+        "\nPlot: " + response.Plot+
+        "\nActors: " + response.Actors +
+        "\n------------------------\n", function (err){
+          if (err){
+            console.log(err);
+          }
+        } );
+      }
      else {
        console.log (colors.red(" Ummmm, that is not a movie. "));
      }
