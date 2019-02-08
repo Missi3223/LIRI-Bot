@@ -115,6 +115,8 @@ spotify.search({
      try{
        var response = JSON.parse(data)
        if (response.Title != undefined){
+         console.log (colors.cyan("If you haven't watched 'Mr. Nobody.' then you should " + "http://www.imdb.com/title/tt0485947" ));
+         console.log (colors.cyan("It's on Netflix"));
          console.log(colors.cyan(" MOVIE NAME " ));
          console.log(colors.magenta(response.Title));
          

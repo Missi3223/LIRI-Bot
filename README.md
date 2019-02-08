@@ -72,7 +72,7 @@ SPOTIFY_SECRET=your-spotify-secret
 
 - This will search the Bands in Town Artist Events API
 
-- 'https://rest.bandsintown.com/artists/' + artist +'/events?app_id=codingbootcamp'
+- (https://rest.bandsintown.com/artists) + artist +'/events?app_id=codingbootcamp'
 
 ### For an artist and render the following information about each event to the terminal
 
@@ -103,13 +103,13 @@ You will utilize the node-spotify-api package in order to retrieve song informat
 
 - The Spotify API requires you sign up as a developer to generate the necessary credentials. You can follow these steps in order to generate a client id and client secret:
 
-- [x] Step One: Visit https://developer.spotify.com/my-applications/#!/
+- [x] Step One: Visit (https://developer.spotify.com/my-applications/#!)
 
 - [x] Step Two: Either login to your existing Spotify account or create a new one (a free account is fine) and log in.
 
 - [x] Step Three: Once logged in, navigate to
 
-( https://developer.spotify.com/my-applications/#!/applications/create) 
+(https://developer.spotify.com/my-applications/#!/applications/create)
 to register a new application to be used with the Spotify API.
 
 - [x] You can fill in whatever you'd like for these fields. When finished, click the "complete" button.
@@ -119,6 +119,8 @@ to register a new application to be used with the Spotify API.
 - [x] node liri.js movie-this **movie name here**
 
 This will output the following information to your terminal/bash window:
+![Image of package.json created](/images/movie-this.png)
+
 
 - Title of the movie.
 - Year the movie came out.
@@ -131,9 +133,11 @@ This will output the following information to your terminal/bash window:
 
 - [x] If the user doesn't type a movie in, the program will output data for the movie 'Mr. Nobody.'
 
-- [ ] If you haven't watched "Mr. Nobody," then you should: http://www.imdb.com/title/tt0485947/
+- [x] If you haven't watched "Mr. Nobody," then you should: (http://www.imdb.com/title/tt0485947)
 
-- [ ] It's on Netflix!
+- [x] It's on Netflix!
+
+![Image of package.json created](/images/movie-this-default.png)
 
 _You'll use the axios package to retrieve data from the OMDB API. Like all of the in-class activities, the OMDB API requires an API key. You may use **trilogy**._
 
